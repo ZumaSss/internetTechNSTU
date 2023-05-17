@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ресторан VARENICHKI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <div class="title">
+        <div class="name">VARENICHKI</div>
+        <div class="sen">Вареники №1 в Сибири по мнению экспертов</div>
+    </div>
+    <div class="buttons">
+        <div class="button1">
+            <form action="menu.html" target="_blank">
+                <button type="submit" class="btn">МЕНЮ</button>
+            </form>
+        </div>
+        <div class="button2">
+            <button type="submit" class="btn" id="popup-trigger">ЗАБРОНИРОВАТЬ СТОЛИК</button>
+            <div class="popup" id="popup">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" required minlength="3" maxlength="16" size="10">
+                <label for="phone">Номер телефона:</label>
+                <input type="text" id="phone" required minlength="10" maxlength="12" size="10">
+                <button type="submit" class="btnPopup" id="popupSuccess-trigger">Заказать!</button>
+            </div>
+            <div class="popupSuccess" id="popupSuccess">
+                <img class="imgSuccess" src="./img/galochka.png" alt="GALOCHKA"/>
+                <div class="successMessage">Готово!<br> Ваша заявка принята, ожидайте звонка оператора.</div>
+                <button type="submit" class="btnPopup">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <div class="bm">
+        <div class="social">Социальные сети
+            <div class="pictures">
+                <div class="vk"><a href="https://vk.com/meme_boyy"><img class="socialImg" src="img/вк.webp" alt="VK"/></a></div>
+                <div class="instagram"><a href="https://vk.com/monreline"><img class="socialImg" src="img/инста.png" alt="INSTA"/></a></div>
+                <div class="telegram"><img class="socialImg" src="img/тедлега.webp" alt="TELEGA"/></div>
+            </div>
+        </div>
+        <div class="contacts">Контакты
+            <div class="phone1"><a class="nav-name" href="#">+7(913)-268-46-74</a></div>
+            <div class="phone2"><a class="nav-name" href="#">+7(800)-555-35-35</a></div>
+        </div>
+        <div class="feedback">Отзывы и предложения
+            <div class="mail"><a class="nav-name" href="#">varenichki@gmail.com</a></div>
+        </div>
+    </div>
+</div>
+<script async src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Tenor Sans', serif;
+}
+.title {
+    display: inline-block;
+    padding-top: 30vh;
+    text-align: center;
+}
+.name {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 150px;
+    color: lightyellow;
+    background-color: rgba(250, 205, 145, 0.5);
+    width: 100%;
+}
+.sen {
+    font-size: 50px;
+    font-style: italic;
+    text-indent: 250px;
+    color: whitesmoke;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    opacity: 0.8;
+}
+.bm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    font-size: 35px;
+}
+.social {
+    margin-left: 100px;
+}
+.pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.feedback {
+    margin-right: 100px;
+}
+.nav-name {
+    color: #FFF;
+    text-decoration: none;
+}
+.socialImg {
+    height: 60px;
+    width: 60px;
+}
+.buttons {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn{
+    font-size: 40px;
+    font-family: 'Tenor Sans', serif;
+    width: 600px;
+    height: 100px;
+    border: 0;
+    border-radius: 30px;
+    background-color: rgba(105, 105, 105, 0.85);
+    color: rgb(250, 205, 145);
+    cursor: pointer;
+}
+
+.container {
+    background-image: url("img/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Tenor Sans', serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text {
+    background-color: #4e4d51;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.menu1 {
+    font-size: 75px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    color: #FFFFFF;
+    box-shadow: 0 0 250px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup label {
+    font-family: 'Tenor Sans', serif;
+    font-size: 40px;
+}
+.popup input {
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+}
+.btnPopup {
+    font-size: 40px;
+    font-family: 'Tenor Sans', serif;
+    border: 0;
+    border-radius: 30px;
+    background-color: rgba(105, 105, 105, 0.85);
+    color: rgb(250, 205, 145);
+    cursor: pointer;
+}
+#popup.show {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popupSuccess {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    color: #FFFFFF;
+    box-shadow: 0 0 250px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    position: absolute;
+    top: 26.1vh;
+    left: 41.4%;
+    visibility: hidden;
+}
+#popupSuccess.show {
+    visibility: visible;
+}
+.successMessage {
+    font-family: 'Tenor Sans', serif;
+    font-size: 40px;
+}

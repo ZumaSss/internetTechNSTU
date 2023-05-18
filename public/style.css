@@ -119,9 +119,6 @@ body {
     justify-content: center;
 }
 .popup {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 20px;
     text-align: center;
     width: 400px;
@@ -136,6 +133,13 @@ body {
     transform: translate(-50%, -50%) scale(0.1);
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
+}
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 600px;
 }
 .popup label {
     font-family: 'Tenor Sans', serif;
@@ -173,12 +177,15 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 50px;
     position: absolute;
-    top: 26.1vh;
-    left: 41.4%;
+    top: 50%;
+    left: 50%;
     visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
 }
 #popupSuccess.show {
     visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
 }
 .successMessage {
     font-family: 'Tenor Sans', serif;

@@ -7,7 +7,8 @@ create TABLE restaurant(
 create TABLE booking(
     id SERIAL PRIMARY KEY,
     name VARCHAR(30),
-    phone INT
+    phone VARCHAR(16),
+    date TIMESTAMP
 );
 
 create TABLE tableAndBooking(

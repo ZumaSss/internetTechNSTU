@@ -24,9 +24,19 @@ const popupSuccessQuerySelector = "#popupSuccess";
 const popupSuccessEl = document.querySelector(popupSuccessQuerySelector)
 const popupSuccessBtn = document.querySelector('#popupSuccess-trigger')
 
-popupSuccessBtn.addEventListener("click", () => {
+
+function onSuccess() {
     setTimeout(() => {
         popupSuccessEl.classList.add("show")
         popupEl.classList.remove("show");
     }, 250)
-})
+}
+
+dateInput.min = new Date().toISOString().slice(0, -8)
+
+$('#phone').mask('+7(999)999-99-99')
+
+document.getElementById('menuBtn').onclick = function () {
+    window.location.href = ('./menu')
+}
+

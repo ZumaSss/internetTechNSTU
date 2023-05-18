@@ -34,7 +34,7 @@ function onSuccess() {
 
 dateInput.min = new Date().toISOString().slice(0, -8)
 
-$('#phone').mask('+7(999)999-99-99')
+$('.phone').mask('+7(999)999-99-99')
 
 document.getElementById('menuBtn').onclick = function () {
     window.location.href = ('./menu')

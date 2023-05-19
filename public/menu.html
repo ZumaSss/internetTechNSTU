@@ -67,26 +67,24 @@
         .............................. Квас<br>
         .............................. Минеральная вода<br>
       </div>
-      <div class="buttonMenu">
-        <button type="submit" class="btn" id="popup-trigger">ЗАКАЗАТЬ СТОЛИК</button>
-        <div class="popup" id="popup">
-          <form method="post" action="/" class="booking" onsubmit="onSuccess()">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" required minlength="3" maxlength="16" size="10" name="name">
-            <label for="phone">Номер телефона:</label>
-            <input type="tel" class="phone" id="phone" required minlength="16"
-                   placeholder="+7(999)999-99-99" size="10" name="phone">
-            <small>Введите телефон в формате: +7(999)999-99-99</small>
-            <label for="dateInput">Выберите желаемое время:</label>
-            <input type="datetime-local" id="dateInput" name="date" required>
-            <button type="submit" class="btnPopup" id="popupSuccess-trigger">Заказать!</button>
-          </form>
-        </div>
-        <div class="popupSuccess" id="popupSuccess">
-          <img class="imgSuccess" src="./img/galochka.png" alt="GALOCHKA"/>
-          <div class="successMessage">Готово!<br> Ваша заявка принята, ожидайте звонка оператора.</div>
-          <button type="submit" class="btnPopup">Закрыть</button>
-        </div>
+      <button type="submit" class="btn" id="popup-trigger">ЗАКАЗАТЬ СТОЛИК</button>
+      <div class="popup" id="popup">
+        <form method="post" action="/" class="booking" onsubmit="onSuccess()">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" required minlength="3" maxlength="16" size="10" name="name">
+          <label for="phone">Номер телефона:</label>
+          <input type="tel" class="phone" id="phone" required minlength="16"
+                 placeholder="+7(999)999-99-99" size="10" name="phone">
+          <small>Введите телефон в формате: +7(999)999-99-99</small>
+          <label for="dateInput">Выберите желаемое время:</label>
+          <input type="datetime-local" id="dateInput" name="date" required>
+          <button type="submit" class="btnPopup" id="popupSuccess-trigger">Заказать!</button>
+        </form>
+      </div>
+      <div class="popupSuccess" id="popupSuccess">
+        <img class="imgSuccess" src="./img/galochka.png" alt="GALOCHKA"/>
+        <div class="successMessage">Готово!<br> Ваша заявка принята, ожидайте звонка оператора.</div>
+        <button type="submit" class="btnPopup">Закрыть</button>
       </div>
     </div>
   </div>

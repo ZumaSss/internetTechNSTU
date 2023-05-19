@@ -43,11 +43,11 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 150px;
+    height: 100px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     color: #FFF;
-    font-size: 35px;
+    font-size: 25px;
 }
 .social {
     margin-left: 100px;
@@ -69,7 +69,7 @@ body {
     width: 60px;
 }
 .buttons {
-    margin-top: 100px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -105,24 +105,24 @@ body {
     margin-bottom: 100px;
 }
 .menu1 {
-    font-size: 75px;
+    font-size: 50px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 .bar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 .popup {
     padding: 20px;
     text-align: center;
     width: 400px;
-    height: 600px;
+    height: 500px;
     color: #FFFFFF;
     box-shadow: 0 0 250px rgba(0, 0, 0, 1);
     background-color: rgba(0, 0, 0, 0.9);
@@ -139,7 +139,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 400px;
-    height: 600px;
+    height: 500px;
 }
 .popup label {
     font-family: 'Tenor Sans', serif;
@@ -171,7 +171,7 @@ body {
     padding: 20px;
     text-align: center;
     width: 400px;
-    height: 600px;
+    height: 500px;
     color: #FFFFFF;
     box-shadow: 0 0 250px rgba(0, 0, 0, 1);
     background-color: rgba(0, 0, 0, 0.9);

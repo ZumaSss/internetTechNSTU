@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
     res.sendFile('index.html')
 })
 app.get('/menu', function (req, res) {
-    res.sendFile('C:\\Users\\ivana\\Desktop\\internetTch\\public\\menu.html')
+    res.sendFile('C:\\Users\\ivana\\WebstormProjects\\internetTechNSTU\\public\\menu.html')
 })
 
 app.use('/', userRouter)
